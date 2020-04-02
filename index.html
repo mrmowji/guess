@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess the Number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <h1>Guess the Number</h1>
+    <p>
+      I have a random number <strong>between 1 and 100</strong> in my mind.
+      See if you can guess it <strong>in 10 turns or fewer</strong>.
+      I'll tell you if your guess was too high or too low.
+    </p>
+    <div>
+      <input type="number" placeholder="Your guess" id="guess-input">
+      <input type="submit" value="Check" id="guess-submit">
+    </div>
+    <div id="results">
+      <p id="guesses"></p>
+      <p id="message"></p>
+    </div>
+    <button id="reset" class="hidden">Start new game</button>
+  </body>
+</html>
